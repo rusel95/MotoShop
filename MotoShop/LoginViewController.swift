@@ -11,13 +11,49 @@ import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginFacebook: UIButton!
+    @IBOutlet weak var logoutFacebook: UIButton!
+    
     var loginSuccess = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//        if FBSDKAccessToken.current() != nil {
+//            FacebookManager.getUserData {
+//                <#code#>
+//            }
+//        }
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if FBSDKAccessToken.current() != nil && loginSuccess == true {
+            performSegue(withIdentifier: "ClientView", sender: self)
+        }
+    }
+    
+    @IBAction func facebookLoginButton(_ sender: UIButton) {
+        
+        if FBSDKAccessToken.current() != nil {
+            self.loginSuccess = true
+            self.viewDidAppear(true)
+        } else {
+            
+            FacebookManager.shared.logIn(withReadPermissions: ["email", "public_profile"], from: self, handler: { (result, error) in
+                
+                if error != nil {
+                    print(error!)
+                } else {
+                    
+                    FacebookManager.getUserData(completion: { 
+                        self.loginSuccess = true
+                        self.viewDidAppear(true)
+                    })
+                    
+                }
+                
+            })
+        }
+    }
 
 }
