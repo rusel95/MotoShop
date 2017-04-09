@@ -19,17 +19,25 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        if FBSDKAccessToken.current() != nil {
-//            FacebookManager.getUserData {
-//                <#code#>
-//            }
-//        }
+        if FBSDKAccessToken.current() != nil {
+            logoutFacebook.isHidden = true
+            FacebookManager.getUserData(completion: { 
+                self.loginFacebook.setTitle("Continue as \(String(describing: User.currentUser.email!))", for: .normal)
+            })
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
         if FBSDKAccessToken.current() != nil && loginSuccess == true {
             performSegue(withIdentifier: "ClientView", sender: self)
         }
+    }
+    
+    @IBAction func facebookLogoutButton(_ sender: UIButton) {
+        FacebookManager.shared.logOut()
+        User.currentUser.resetUser()
+        logoutFacebook.isHidden = true
+        loginFacebook.setTitle("Login with Facebook", for: .normal)
     }
     
     @IBAction func facebookLoginButton(_ sender: UIButton) {

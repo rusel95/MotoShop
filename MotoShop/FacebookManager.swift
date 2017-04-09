@@ -17,9 +17,12 @@ class FacebookManager {
     public class func  getUserData(completion: @escaping () -> Void) {
         if FBSDKAccessToken.current() != nil {
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, email,picture.type(normal)"]).start(completionHandler: { (connection, result, error) in
-                if error == nil {
+                
+                if error != nil {
+                    print(error!)
+                } else {
                     let json = JSON(result!)
-                    print(json)
+                    User.currentUser.setUser(json)
                     completion()
                 }
             })

@@ -16,6 +16,7 @@
 		84B71FCE1E9A3C6C0041FC0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B71FCC1E9A3C6C0041FC0E /* LaunchScreen.storyboard */; };
 		84B71FD61E9A3CAF0041FC0E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B71FD51E9A3CAF0041FC0E /* LoginViewController.swift */; };
 		84E411C31E9A90E5005BD87E /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E411C21E9A90E5005BD87E /* FacebookManager.swift */; };
+		84F21DB31E9AA8360066B8ED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F21DB21E9AA8360066B8ED /* User.swift */; };
 		A315C6CB6057209702DE69AC /* Pods_MotoShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85059FDA52192B79867FE0E1 /* Pods_MotoShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		84B71FD51E9A3CAF0041FC0E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84E411C21E9A90E5005BD87E /* FacebookManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		84E411C41E9A92AE005BD87E /* MotoShop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotoShop.entitlements; sourceTree = "<group>"; };
+		84F21DB21E9AA8360066B8ED /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		85059FDA52192B79867FE0E1 /* Pods_MotoShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotoShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E39BAB7E1816816345FB4C2 /* Pods-MotoShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotoShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotoShop/Pods-MotoShop.release.xcconfig"; sourceTree = "<group>"; };
 		EB959219681DE1A28A8F1115 /* Pods-MotoShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotoShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotoShop/Pods-MotoShop.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				849C152D1E9A7C4600E1893A /* ClientMenuTableViewController.swift */,
 				849C152F1E9A7F0D00E1893A /* CartViewController.swift */,
 				849C15311E9A80AF00E1893A /* MotoShopViewController.swift */,
+				84F21DB21E9AA8360066B8ED /* User.swift */,
 				84B71FCA1E9A3C6C0041FC0E /* Assets.xcassets */,
 				84B71FCC1E9A3C6C0041FC0E /* LaunchScreen.storyboard */,
 				84B71FCF1E9A3C6C0041FC0E /* Info.plist */,
@@ -237,6 +240,7 @@
 				84E411C31E9A90E5005BD87E /* FacebookManager.swift in Sources */,
 				849C152E1E9A7C4600E1893A /* ClientMenuTableViewController.swift in Sources */,
 				84B71FC41E9A3C6C0041FC0E /* AppDelegate.swift in Sources */,
+				84F21DB31E9AA8360066B8ED /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
