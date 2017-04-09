@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
 
+    var loginSuccess = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
