@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C5F813E0042103A07C4DBA74572C09A"
+               BlueprintIdentifier = "D503C6FFA8D5896DEF354CD6C47DF133"
                BuildableName = "Pods_MotoShop.framework"
                BlueprintName = "Pods-MotoShop"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9C5F813E0042103A07C4DBA74572C09A"
+            BlueprintIdentifier = "D503C6FFA8D5896DEF354CD6C47DF133"
             BuildableName = "Pods_MotoShop.framework"
             BlueprintName = "Pods-MotoShop"
             ReferencedContainer = "container:Pods.xcodeproj">

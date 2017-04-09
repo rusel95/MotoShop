@@ -6,5 +6,10 @@ target 'MotoShop' do
   use_frameworks!
 
   # Pods for MotoShop
-	pod 'SWRevealViewController', '~> 2.3'
+	pod 'SWRevealViewController'
+	pod 'FacebookCore'
+	pod 'FacebookLogin'
+	pod 'FacebookShare'
+	pod 'Alamofire'
+	pod 'SwiftyJSON'
 end
